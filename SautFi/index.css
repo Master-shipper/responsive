@@ -71,9 +71,38 @@ li a{
     gap: 20px;
     flex: 2;
 }
+.section1-balance{
+    text-align: center;
+    display: grid;
+    
+}
+.salio{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.balance{
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
 .section1-content{
     border: 2px solid red;
     padding: 10px;
+    display: flex;
+    gap: 20px;
+    flex-flow: row wrap;
+    overflow: none;
+    justify-content: space-between;
+    
+}
+.check-balance,
+.check-bill,
+.transfer,
+.deposit{
+    flex: 1;
+    min-width: 120px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    display: grid;
 }
 .section2{
     border: 2px solid blue;
@@ -91,6 +120,17 @@ li a{
 }
 .transcript-button{
     border: 2px solid red;
+    padding: 10px;
+    text-align: center;
+}
+.audioElement{
+    border: 2px solid green;
+}
+.recordButton{
+    margin-top: 10px;
+    border: 2px solid green;
+    padding: 10px 30px;
+    border-radius: 5px;
 }
 footer{
     position: fixed;
