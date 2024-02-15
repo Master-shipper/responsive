@@ -13,43 +13,45 @@ nav{
     right: 0;
     left: 0;
     height: 55px;
-    border: 2px solid blue;
     display: flex;
     flex-flow: row nowrap;
-    gap: 15px;
+    gap: 5px;
     align-items: center;
-}
-.user,
-.logo,
-.user-detail{
-    border: 2px solid red;
+    box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.3);
+    padding: 0 10px;
 }
 .logo{
     flex: 1;
     padding: 3px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #78BFEB;
 }
 ul{
     flex: 2;
     text-align: center;
     list-style-type:none;
-    border: 2px solid red;
-    text-align: end;
     padding: 3px;
 }
 li{
-    border: 2px solid green;
     display: inline;
     padding: 2px 20px ;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 li a{
     text-decoration: none;
+    color: grey;
+    font-weight: 700;
+}
+li a:hover{
+    color: #78BFEB;
 }
 .user-detail{
     padding: 2px 5px;
+    font-weight: 700;
+    color: grey;
 }
 .user-img{
-    border: 2px solid red;
     width: 45px;
     height: 45px;
     object-fit:cover;
@@ -61,36 +63,52 @@ li a{
     flex-flow: row wrap;
     gap: 10px;
     margin: 50px auto;
-    border: 2px solid yellow;
     padding: 10px;
     max-width: 80%;
     min-height: 500px;
+    padding: 10px;
 }
 .section1{
-    border: 2px solid blue;
     padding: 10px;
     display: flex;
     flex-flow: column nowrap;
-    gap: 20px;
+    gap: 40px;
     flex: 2;
-    min-width: 300px;
+    box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.3);
+}
+.section1-color{
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 25px;
+    background: linear-gradient(to bottom, #87CEFA 0%, #78BFEB 100%);
+    color: white;
+}
+.about{
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 .information{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 19px;
 }
 .sautifi,
 .airtime,
 .internet{
     border-radius: 25px;
-    padding: 5px 20px;
+    padding: 5px 15px;
+    border: none;
+    background-color: hsl(204, 70%, 80%);
+    color: white;
+    font-weight: bold;
 }
 .section1-balance{
     text-align: center;
     display: grid;
-    
+    gap: 10px;
 }
 .salio{
     font-weight: bold;
@@ -99,16 +117,17 @@ li a{
 .balance{
     font-weight: bolder;
     font-size: 1.8rem;
+    padding-bottom: 10px;
 }
 .section1-content{
-    border: 2px solid red;
-    padding: 10px;
+    padding: 25px 10px;
     display: flex;
     gap: 20px;
     flex-flow: row wrap;
     overflow: none;
     justify-content: space-between;
-    
+    background: linear-gradient(to bottom, #87CEFA 0%, #78BFEB 100%);
+    border-radius: 5px;
 }
 .check-balance,
 .check-bill,
@@ -121,45 +140,93 @@ li a{
     gap: 50px;
     padding: 10px 5px;
     font-weight: bold;
+    background-color: hsl(204, 58%, 65%);
+    color: white;
+    font-size: 1.0rem;
+    opacity: 0.9;
+    border: none;
+}
+.check-balance:hover,
+.check-bill:hover,
+.transfer:hover,
+.deposit:hover{
+    background: linear-gradient(to bottom, #87CEFA 0%, #78BFEB 100%);
+    opacity: 1;
+    box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.3);
 }
 .section2{
-    border: 2px solid blue;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     flex-flow: column nowrap;
     gap: 20px;
     flex: 1;
     min-width: 200px;
+    box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.3);
 }
 .transcript-content{
     overflow-y: scroll;
     max-height: 250px;
     padding: 10px;
-    border: 2px solid red;
+    box-shadow: inset 5px 5px 10px #d9d9d9,
+            inset -5px -5px 10px #ffffff,
+            5px 5px 10px #d9d9d9,
+            -5px -5px 10px #ffffff;
     flex: 1.5;
 }
 .transcript-button{
-    border: 2px solid red;
     padding: 10px;
     text-align: center;
     flex: 0.5;
 }
 .audioElement{
-    border: 2px solid green;
     width: 100%;
+}
+audio::-webkit-media-controls-panel{
+    background: linear-gradient(to bottom, #87CEFA 0%, #78BFEB 100%);
 }
 .recordButton{
     margin-top: 10px;
-    border: 2px solid green;
+    border: none;
     padding: 10px 30px;
     border-radius: 5px;
+    background: linear-gradient(to bottom, #87CEFA 0%, #78BFEB 100%);
+    color: white;
+    font-weight: bold;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+.recordButton:hover{
+    color: #78BFEB;
+    background:none;
+    border: 2px solid #78BFEB;
 }
 footer{
-    position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
     text-align: center;
     height: 30px;
-    border: 2px solid blue;
+    box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.3);
+    color: grey;
+    font-weight: 600;
+}
+@media only screen and (min-width:768px) {
+    ul li i.small.material-icons {
+        display: none;
+    }
+    .section1{
+        min-width: 300px;
+    }
+    footer{
+        position: fixed;
+    }
+}
+@media only screen and (max-width:768px) {
+    ul{
+        display: none;
+    }
+    footer{
+        height: none;
+        font-size: 1.0rem;
+    }
 }
