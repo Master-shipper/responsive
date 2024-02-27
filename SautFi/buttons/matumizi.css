@@ -1,0 +1,65 @@
+.matumizi{
+    padding: 25px 10px;
+    display: flex;
+    gap: 20px;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.january,
+.february,
+.march,
+.april,
+.may,
+.june,
+.july,
+.august,
+.september,
+.october,
+.november,
+.december{
+    text-align: start;
+    flex: 1;
+    min-width: 120px;
+    display: grid;
+    gap: 50px;
+    padding: 10px 5px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #87CEFA 0%, #78BFEB 100%);
+    color: white;
+    font-size: 1.0rem;
+    opacity: 0.9;
+    border: none;
+}
+.january:hover,
+.february:hover,
+.march:hover,
+.april:hover,
+.may:hover,
+.june:hover,
+.july:hover,
+.august:hover,
+.september:hover,
+.october:hover,
+.november:hover,
+.december:hover{
+    background-color: hsl(204, 58%, 65%);
+    opacity: 1;
+    box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.3);
+}
+#select-year{
+    border-radius: 25px;
+    padding: 5px 15px;
+    border: none;
+    background-color: hsl(204, 70%, 80%);
+    color: white;
+    font-weight: bold;
+}
+#select-year:active,
+#select-year:hover,
+#select-year:focus{
+    border: 2px solid white;
+    outline: none;
+}
