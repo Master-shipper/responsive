@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hamisha.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body>
+    <nav>
+        <span class="logo">SautiFi</span>
+        <ul>
+            <li><a href="#">Nyumbani</a></li>
+            <li><a href="#">Ujumbe</a></li>
+            <li><a href="#">Mipangilio</a></li>
+        </ul>
+            <span class="user-detail">Ronald W.</span>
+            <img src="user.jpeg" alt="" class="user-img">
+    </nav>
+    <div class="container">
+        <div class="section1">
+            <div class="section1-color">
+                <h3>Hamisha Pesa</h3>
+                <div class="paybill">
+                    <div class="input-box">
+                        <label for="paybill-no"> Ingiza namba ya simu.</label>
+                        <input type="text" class="paybill-no" id="paybill-no" placeholder="Dijiti (0 - 9, *, #, +) 0 - 20" required></input>
+                    </div>
+                    <div class="input-box">
+                        <label for="account-no"> Ingiza kiwango.</label>
+                        <input type="text" class="account-no" id="account-no" placeholder="Alfabeti 0 - 20" required></input>
+                    </div>
+                    <div class="input-box">
+                        <label for="amount"> Ingiza pin.</label>
+                        <input type="text" class="amount" id="amount" placeholder="Dijiti (0 - 9, *, #, +) 1 - 10" required></input>
+                    </div>
+                    <button type="submit"> Lipa </button>
+                </div>
+            </div>
+            <div class="section1-content">
+                <a href="matumizi.html" class="check-balance">
+                    <i class="large material-icons" style="color: white; text-align: end;">receipt</i>
+                    Angalia Matumizi
+                </a>
+                <a href="bili.html" class="check-bill">
+                    <i class="large material-icons" style="color: white; text-align: end;">speaker_phone</i>
+                    Lipa bili
+                </a>
+                <a href="hamisha.html" class="transfer">
+                    <i class="large material-icons" style="color: white; text-align: end;">swap_vert</i>
+                    Hamisha Pesa
+                </a>
+                <a href="arifa.html" class="deposit">
+                    <i class="large material-icons" style="color: white; text-align: end;">system_update</i>
+                    Weka arifa
+                </a>
+            </div>
+            
+        </div>
+        <div class="section2">
+            <h3 style="color: grey;">Nakala za mazungumzo</h3>
+            <textarea class="transcript-content" placeholder="This is where the content will be found">
+            </textarea>
+            <div class="transcript-button">
+                <audio id="audioElement" class="audioElement" controls></audio>
+                <button class="recordButton" id="recordButton">Anza kurekodi</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        G10 - Emerging Technologies @2024
+    </footer>
+</body>
+<script src="index.js"></script>
+<script src="buttonsjs/matumizi.js"></script>
+</html>

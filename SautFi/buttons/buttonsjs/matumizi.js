@@ -7,12 +7,12 @@ const selectedYear = document.getElementById('selected-year');
 // Function to update the selected year
 function updateSelectedYear() {
     const year = selectYear.value;
-    selectedYear.textContent = "Selected Year: " + year;
+    selectedYear.innerHTML = "Tazama ripoti wa mwaka wa: <u>" + year + "</u>";
 }
 
-// Populate years (adjust as needed)
+// Populate years starting from the current year
 const currentYear = new Date().getFullYear();
-for (let year = currentYear - 100; year <= currentYear + 100; year++) {
+for (let year = currentYear; year >= currentYear - 17; year--) {
     const option = document.createElement('option');
     option.value = year;
     option.textContent = year;
