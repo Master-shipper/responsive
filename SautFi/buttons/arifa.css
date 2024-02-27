@@ -2,9 +2,29 @@
     background-color: #ffffff;
     display: flex;
     flex-flow: column;
-    gap: 10px;
-    padding: 10px;
+    gap: 15px;
+    padding: 10px 50px;
 }
 button{
-    
+    padding-top: 10px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    border-radius: 5px;
+    text-align: start;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid hsl(204, 58%, 65%);
+    border-left: 4px solid hsl(204, 58%, 65%);
+    font-weight: bold;
+    color: grey;
+    font-size: 1.0rem;
+    transition: 0.1s ease-in-out;
+}
+button:hover{
+    border-left: 3px solid hsl(204, 58%, 65%);
+    opacity: 0.8;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-bottom: 0.5px solid hsl(204, 58%, 65%);
 }
