@@ -34,7 +34,7 @@ button{
     padding: 10px 30px;
     border-radius: 5px;
     background: linear-gradient(to bottom, #87CEFA 0%, #78BFEB 100%);
-    color: white;
+    color: #ffffff;
     font-weight: bold;
     font-size: 1.0rem;
     transition: 0.1s ease-in-out;
